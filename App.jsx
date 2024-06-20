@@ -12,7 +12,7 @@ const [users, setUsers] = useState([
 ])
 
 const addUser = obj =>{
-  setUsers([...users, {...obj}])
+  setUsers([...users, {...obj, id:Date.now()}])
 }
 
   return (
